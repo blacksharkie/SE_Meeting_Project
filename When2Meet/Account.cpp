@@ -1,5 +1,4 @@
-#include "Account.h"
-
+/* #include "Account.h"
 Account::Account()
 {
     email= "unknown";
@@ -37,19 +36,18 @@ bool isGuest()
 bool login(std::string username, std::pass) //Not dealing with hashing currently
 {
 //Currently assuming is case based
-    if(username == email && pass == password)
-	//email = username;
-	//password = pass;
-	//guest = false;
-			
-		return true;
+    if(username == email && pass == password){
+    email = username;
+    password = pass;
+    guest = false;
+
+        return true;}
     else
-		return false;
+    {return false;}
 }
 std::string passHash(std::string pass) //change the password into a string of numbers instead
 {
 	std::string number = "";
-	*/
 	int num = 0;
 	while(pass.length > num)//get the first character in the string and convert it to a 2 digit number and add it to the new string number
 	{
@@ -61,7 +59,6 @@ std::string passHash(std::string pass) //change the password into a string of nu
 		}
 		num++;
 	}
-	*/
 	
 }
 void createAccount(std::string username, std::string pass)
@@ -79,3 +76,4 @@ void logout()//resets the account login information.
     guest = true;
     accountNum = 0;
 }
+*/

@@ -22,8 +22,18 @@ void LoginWindow::on_pushButtonLogin_clicked()
 
     if(username == "test" && password == "test123"){
         QMessageBox::information(this,"Login", "Login Successful!");
+        this->hide();
+        mainWindow mainWindow;
+        mainWindow.exec();
+
     }
     else{
         QMessageBox::warning(this, "Login", "Wrong username or password, please try again");
     }
+
+}
+
+void LoginWindow::on_pushButtonCreateAcc_clicked()
+{
+
 }

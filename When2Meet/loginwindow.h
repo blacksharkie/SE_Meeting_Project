@@ -2,6 +2,7 @@
 #define LOGINWINDOW_H
 
 #include <QMainWindow>
+#include <mainwindow.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class LoginWindow; }
@@ -17,6 +18,8 @@ public:
 
 private slots:
     void on_pushButtonLogin_clicked();
+
+    void on_pushButtonCreateAcc_clicked();
 
 private:
     Ui::LoginWindow *ui;
