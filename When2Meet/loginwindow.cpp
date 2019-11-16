@@ -1,6 +1,9 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
 #include <QMessageBox>
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include "createaccount.h"
 
 LoginWindow::LoginWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -35,5 +38,7 @@ void LoginWindow::on_pushButtonLogin_clicked()
 
 void LoginWindow::on_pushButtonCreateAcc_clicked()
 {
-
+    this->hide();
+    createAccount createAccount;
+    createAccount.showNormal();
 }

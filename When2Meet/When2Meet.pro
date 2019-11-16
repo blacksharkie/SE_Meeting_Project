@@ -17,16 +17,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Account.cpp \
+    createaccount.cpp \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     Account.h \
+    createaccount.h \
     loginwindow.h \
     mainwindow.h
 
 FORMS += \
+    createaccount.ui \
     loginwindow.ui \
     mainwindow.ui
 

@@ -59,7 +59,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEditPassword"/>
+           <widget class="QLineEdit" name="lineEditPassword">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -69,6 +73,9 @@
        <widget class="QPushButton" name="pushButtonLogin">
         <property name="text">
          <string>Login</string>
+        </property>
+        <property name="shortcut">
+         <string>Return</string>
         </property>
        </widget>
       </item>

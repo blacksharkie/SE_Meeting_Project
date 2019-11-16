@@ -1,4 +1,6 @@
 #include "loginwindow.h"
+#include "mainwindow.h"
+#include "createaccount.h"
 
 #include <QApplication>
 
